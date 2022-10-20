@@ -1,6 +1,6 @@
 # How to customize the Xamarin LinearGauge label position
 
-This repository contains sample for how to customize the label position in the [Syncfusion Xamarin.Forms Linear Gauge](https://help.syncfusion.com/xamarin/linear-gauge/getting-started) control, as shown in the following image.
+This repository contains sample to customize the label position in the [Syncfusion Xamarin.Forms Linear Gauge](https://help.syncfusion.com/xamarin/linear-gauge/getting-started) control, as shown in the following image.
 
 ![linear gauge with label offset customization](Output.png)
 
