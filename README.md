@@ -1,50 +1,54 @@
-# How-to-customize-the-Xamarin-LinearGauge-label-position
-This article explains how to customize the label position in the Xamarin.Forms [SfLinearGauge](https://help.syncfusion.com/xamarin/linear-gauge/getting-started) control, as shown in the following image.
+# How to customize the Xamarin LinearGauge label position
+
+This repository contains sample to customize the label position in the [Syncfusion Xamarin.Forms Linear Gauge](https://help.syncfusion.com/xamarin/linear-gauge/getting-started) control, as shown in the following image.
 
 ![linear gauge with label offset customization](Output.png)
 
-## Change the linear gauge label position
+Please refer the KB through this [link](https://www.syncfusion.com/kb/12962/how-to-customize-the-xamarin-linear-gauge-label-position-sflineargauge).
 
-Label position can be changed by setting the LabelOffset property in [SfLinearGauge](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html).
+## Syncfusion controls
 
-**Step 1:** Create an instance of [SfLinearGauge](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html).
+This project used the following Syncfusion control(s):
+* [SfLinearGauge](https://www.syncfusion.com/xamarin-ui-controls/xamarin-linear-gauge)
 
-**Step 2:** Add the [LinearScale](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html) into the scales collection of the linear gauge.
+## Supported platforms
 
-**Step 3:** Add the [LabelOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_LabelOffset) property to customize the LinearGauge label position.
+| Platforms | Supported versions |
+| --------- | ------------------ |
+| Android   | API level 21 and later versions |
+| iOS | iOS 9.0 and later versions |
+| UWP | Windows 10 devices |
 
-**[XAML]**
-```
-<gauge:SfLinearGauge>
-    <gauge:SfLinearGauge.Scales>
-        <gauge:LinearScale ScaleBarColor="#e0e0e0"
-                           LabelColor="#424242"
-                           LabelOffset="5">
-            <gauge:LinearScale.MajorTickSettings>
-                <gauge:LinearTickSettings Thickness="1"
-                                          Color="Gray"
-                                          Length="15" />
-            </gauge:LinearScale.MajorTickSettings>
-            <gauge:LinearScale.MinorTickSettings>
-                <gauge:LinearTickSettings Thickness="1"
-                                          Color="Gray"
-                                          Length="7" />
-            </gauge:LinearScale.MinorTickSettings>
-        </gauge:LinearScale>
-    </gauge:SfLinearGauge.Scales>
-</gauge:SfLinearGauge>
-```
+## Requirements to run the sample
 
-[View the sample in GitHub](https://github.com/SyncfusionExamples/How-to-customize-the-Xamarin-LinearGauge-label-position)
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-## See also
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/xamarin/system-requirements)
 
-[How to set the postfix or prefix value for labels in Xamarin.Forms SfLinearGauge](https://help.syncfusion.com/xamarin/linear-gauge/labels#setting-postfix-and-prefix-for-labels)
+## How to run the sample
 
-[How to add multiple scale in Xamarin.Forms SfLinearGauge](https://help.syncfusion.com/xamarin/linear-gauge/scales#multiple-scales)
+1. Clone the sample and open it in Visual Studio.
 
-[How to set the custom-labels for scale in Xamarin.Forms SfLinearGauge](https://help.syncfusion.com/xamarin/linear-gauge/labels#custom-labels)
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the App.xaml.cs file as demonstrated in the following code.
 
-[How to customize the label visibility in Xamarin.Forms SfLinearGauge](https://help.syncfusion.com/xamarin/linear-gauge/labels#labels-visibility)
+		public App()
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+	
+			InitializeComponent();
+	
+			MainPage = new App1.MainPage();
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/xamarin/licensing/overview) for more details.
+	
+3. Clean and build the application.
 
-[How to customize the scale labels in Xamarin.Forms SfLinearGauge](https://help.syncfusion.com/xamarin/linear-gauge/labels#customize-the-scale-labels)
+4. Run the application.
+
+## License
+
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
